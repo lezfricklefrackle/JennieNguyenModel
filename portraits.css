@@ -1,168 +1,215 @@
-/* Reset */
+*{
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
-
-body {
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Header */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 25px 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: black;
-    z-index: 1000;
-}
-
-/* Jennie Nguyen */
-
-.logo {
-
-    font-size: 1.6rem;
-
-    font-weight: 300;
-
-    letter-spacing: 8px;
+margin:0;
+padding:0;
+box-sizing:border-box;
 
 }
 
-.logo:hover,
-.logo:visited,
-.logo:active {
-    color: #ffffff !important;
-    text-decoration: none;
-}
 
-/* Navigation */
+body{
 
-nav {
-    display: flex;
-    gap: 40px;
-}
+background:black;
 
-nav a {
+color:white;
 
-    color: white;
+font-family:Arial, Helvetica, sans-serif;
 
-    text-decoration: none;
-
-    font-size: 0.9rem;
-
-    letter-spacing: 4px;
-
-    transition: 0.3s ease;
-}
-
-nav a:hover {
-
-    opacity: 0.6;
+padding:40px;
 
 }
 
-/* Hero Section */
 
-.hero {
 
-    text-align: center;
+/* HEADER */
 
-    padding-top: 140px;
+header{
 
-    padding-bottom: 80px;
+display:flex;
 
-}
+justify-content:space-between;
 
-.hero h1 {
+align-items:center;
 
-    font-size: 7rem;
-
-    font-weight: 300;
-
-    letter-spacing: 12px;
+margin-bottom:90px;
 
 }
 
-.hero p {
 
-    margin-top: 20px;
 
-    font-size: 1rem;
+.logo{
 
-    letter-spacing: 8px;
+text-decoration:none;
 
-    color: #aaa;
+color:white !important;
 
-}
+font-size:12px;
 
-/* Portrait Gallery */
+font-weight:300;
 
-.gallery {
-
-    max-width: 1500px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
-
-    padding: 40px;
+letter-spacing:6px;
 
 }
 
-.gallery img {
 
-    width: 100%;
 
-    display: block;
+.logo:visited{
 
-    border-radius: 4px;
+color:white !important;
 
 }
 
-/* Mobile */
 
-@media(max-width:900px){
 
-.gallery{
+.logo:hover{
 
-grid-template-columns:repeat(2,1fr);
+opacity:.7;
 
 }
 
-.hero h1{
 
-font-size:4rem;
+
+.logo:active{
+
+color:white !important;
 
 }
+
+
 
 nav{
 
-gap:20px;
+display:flex;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:11px;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+opacity:.75;
+
+transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+opacity:1;
+
+}
+
+
+
+/* TITLE */
+
+.hero{
+
+text-align:center;
+
+margin-bottom:80px;
+
+}
+
+
+
+.hero h1{
+
+font-size:90px;
+
+font-weight:300;
+
+letter-spacing:12px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero p{
+
+font-size:11px;
+
+letter-spacing:4px;
+
+opacity:.6;
+
+}
+
+
+
+/* GALLERY */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:25px;
+
+max-width:1500px;
+
+margin:auto;
+
+}
+
+
+
+.gallery img{
+
+width:100%;
+
+display:block;
+
+transition:.3s;
+
+}
+
+
+
+.gallery img:hover{
+
+opacity:.85;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.gallery{
+
+grid-template-columns:
+repeat(2,1fr);
 
 }
 
 }
 
 
-@media(max-width:600px){
+
+@media(max-width:700px){
 
 .gallery{
 
@@ -172,17 +219,15 @@ grid-template-columns:1fr;
 
 header{
 
-padding:20px;
-
 flex-direction:column;
 
 gap:20px;
 
 }
 
-.hero h1{
+nav{
 
-font-size:3rem;
+justify-content:center;
 
 }
 

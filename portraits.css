@@ -33,19 +33,19 @@ header {
 /* Jennie Nguyen */
 
 .logo {
-    color: white;
-    text-decoration: none;
 
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+
     font-weight: 300;
 
     letter-spacing: 8px;
+
 }
 
 .logo:hover,
 .logo:visited,
 .logo:active {
-    color: white;
+    color: #ffffff !important;
     text-decoration: none;
 }
 

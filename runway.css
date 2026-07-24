@@ -161,20 +161,15 @@ margin:auto;
 .video{
 
 display:flex;
-
 justify-content:center;
-
 margin-bottom:80px;
 
 }
 
-
-
 .video video{
 
-width:38%;
-
-max-width:320px;
+width:22%;
+max-width:220px;
 
 border-radius:4px;
 
@@ -184,14 +179,11 @@ transition:.35s;
 
 }
 
-
-
 .video video:hover{
 
 transform:scale(1.01);
 
 }
-
 
 
 /* PHOTOS */

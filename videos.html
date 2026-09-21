@@ -1,105 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Videos | Jennie Nguyen</title>
-
-<link rel="stylesheet"
-href="videos.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-
-<a href="index.html">
-
-JENNIE NGUYEN
-
-</a>
-
-</div>
+body {
+    background: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 40px;
+}
 
 
-<nav>
+/* HEADER */
 
-<a href="night.html">Night</a>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
 
-<a href="flash.html">Flash</a>
+.logo {
+    font-size: 12px;
+    letter-spacing: 5px;
+}
 
-<a href="urban.html">Urban</a>
+.logo a {
+    text-decoration: none;
+    color: white;
+}
 
-<a href="editorial.html">Editorial</a>
-
-<a href="portraits.html">Portraits</a>
-  
-<a href="runway.html">Runway</a>
-
-<a href="videos.html">Videos</a>
-
-<a href="compcard.html">Compcard</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
+.logo a:visited {
+    color: white;
+}
 
 
+/* NAVIGATION */
 
-<section class="intro">
+nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
 
-<h1>VIDEOS</h1>
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: 0.3s;
+}
 
-<p>Motion • Campaign • Film • Documentary </p>
-
-</section>
-
-
-
-<section class="video-grid">
-
-<video controls>
-
-<source src="video1.mp4" type="video/mp4">
-
-</video>
-
-
-<video controls>
-
-<source src="video2.mp4" type="video/mp4">
-
-</video>
+nav a:hover {
+    opacity: 1;
+}
 
 
-<video controls>
+/* INTRO */
 
-<source src="video3.mp4" type="video/mp4">
+.intro {
+    text-align: center;
+    margin-bottom: 70px;
+}
 
-</video>
-  
+.intro h1 {
+    font-size: 90px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+}
 
-<video controls>
-
-<source src="video4.mp4" type="video/mp4">
-
-</video>
-
-</section>
+.intro p {
+    font-size: 11px;
+    letter-spacing: 4px;
+    opacity: 0.6;
+}
 
 
-</body>
+/* VIDEO GRID */
 
-</html>
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+    align-items: start;
+}
+
+
+/* VIDEOS */
+
+.video-grid video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    background: black;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 30px;
+    }
+
+    header {
+        margin-bottom: 70px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .intro h1 {
+        font-size: 65px;
+        letter-spacing: 9px;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    .logo {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    nav {
+        gap: 14px 18px;
+    }
+
+    nav a {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .intro {
+        margin-bottom: 45px;
+    }
+
+    .intro h1 {
+        font-size: 42px;
+        letter-spacing: 6px;
+    }
+
+    .intro p {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+        line-height: 1.6;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .video-grid video {
+        width: 100%;
+    }
+}

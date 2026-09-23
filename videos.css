@@ -5,6 +5,8 @@
 }
 
 
+/* BODY */
+
 body {
     background: black;
     font-family: Arial, sans-serif;
@@ -107,6 +109,16 @@ nav a:hover {
 }
 
 
+/* SMALLER PORTRAIT VIDEO */
+/* This targets video2, which is the vertical one */
+
+.video-grid video:nth-child(2) {
+    width: auto;
+    height: 220px;
+    justify-self: center;
+}
+
+
 /* TABLET */
 
 @media (max-width: 900px) {
@@ -132,6 +144,9 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .video-grid video:nth-child(2) {
+        height: 220px;
+    }
 }
 
 
@@ -186,6 +201,13 @@ nav a:hover {
 
     .video-grid video {
         width: 100%;
+        height: auto;
+    }
+
+    .video-grid video:nth-child(2) {
+        width: auto;
+        height: 220px;
+        justify-self: center;
     }
 
 }
